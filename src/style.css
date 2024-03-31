@@ -51,6 +51,8 @@ main {
 
 main > img {
     width: 80dvw;
+    border-radius: 2em;
+    box-shadow: 10px 10px rgb(0, 70, 95);
 }
 
 footer {
@@ -59,3 +61,27 @@ footer {
     background-color: rgb(28, 28, 28);
     color: white;
 }
+
+a {
+    background-color: aquamarine;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    main {
+       flex-direction: row;
+    }
+
+    img {
+        flex: 1 1 100px;
+    }
+
+    h1 {
+        max-width: 200px;
+    }
+
+}
+

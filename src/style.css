@@ -20,7 +20,7 @@ header, footer {
 }
 
 header {
-    background-color: rgb(0, 161, 225);
+    background-color: rgb(239, 239, 239);
     height: 10dvh;
     width: 100dvw;
     row-gap: 0.5em;
@@ -29,14 +29,15 @@ header {
 nav > a {
     text-decoration: none;
     color: black;
-    background-color: rgb(106, 223, 249);
-    border-radius: 1em;
+    background-color: rgb(239, 239, 239);
+    border-radius: 0.5em;
     padding: 0.25em;
     transition: 0.5s;
 }
 
 a:hover {
     background-color: white;
+    box-shadow: 5px 5px black;
 }
 
 main {
@@ -71,17 +72,18 @@ a {
 }
 
 @media (min-width: 600px) {
-    main {
-       flex-direction: row;
-    }
-
-    img {
-        flex: 1 1 100px;
-    }
-
-    h1 {
-        max-width: 200px;
-    }
-
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+header > h2 {
+    font-size: 2em;
+}
+
+nav > a {
+    font-size: 1.3em;
+    padding: 0.7em;
+}
+}

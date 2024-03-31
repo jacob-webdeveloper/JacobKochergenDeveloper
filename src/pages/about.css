@@ -1,0 +1,29 @@
+
+ {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+div > img {
+    border-radius: 1em;
+    box-shadow: 10px 10px rgb(0, 70, 95);
+    max-width: 80dvw;
+}
+
+@media (min-width: 600px) {
+main > h1 {
+    font-size: 3em;
+    margin: 0 0 3dvw 0;
+}
+
+div {
+    display: flex;
+    column-gap: 5dvw;
+    margin: 0 5dvw 0 5dvw;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+}

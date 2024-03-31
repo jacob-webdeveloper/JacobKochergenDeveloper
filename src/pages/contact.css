@@ -13,4 +13,19 @@ div > a {
     justify-content: center;
     font-size: large;
     box-shadow: 10px 10px rgb(0, 70, 95);
+    font-size: 1em;
+}
+
+
+@medi (min-width: 600px) {
+main > h1 {
+    font-size: 3em;
+    margin: 0 0 3dvw 0;
+}
+
+div > a {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
 }

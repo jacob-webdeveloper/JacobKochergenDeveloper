@@ -1,19 +1,29 @@
 
-main > h1 {
-    margin: 0dvh 35dvw 0dvh 0dvw;
+main > section > h1 {
+    margin: 0dvh 45dvw 0dvh 0dvw;
+    font-size: xx-large;
 }
 
-main > h2 {
-    margin: 0dvh 0dvw 1dvh 25dvw;
+main > section > h2 {
+    margin: 0dvh 15dvw 1dvh 25dvw;
 }
 
-main > a {
-    min-width: 30dvw;
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section > a {
+    max-width: 30dvw;
     display: flex;
     justify-content: center;
     font-size: large;
     box-shadow: 10px 10px rgb(0, 70, 95);
+    margin: 2dvh 0 0 0;
 }
+
 
 img {
     max-width: 50dvw;
@@ -22,32 +32,34 @@ img {
     box-shadow: 10px 10px rgb(0, 70, 95);
 }
 
+
+
 @media (min-width: 600px) {
-    main {
-       flex-direction: row;
-    }
+main {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10dvw;
+}
 
-    img {
-        max-width: 40dvw;
-        margin: 5dvw;
-    }
+section {
+    max-width: 45dvw;
+}
 
-    div {
-        max-width: 40dvw;
-        margin: 5dvw;
-        
-    }
+img {
+    max-width: 40dvw;
+    max-height: 75dvh;
+    object-fit: cover;
+}
 
-    div > h2 {
-        margin: 1dvh 0 1dvh 10dvw;
-    }
+main > section > h1 {
+    margin: 0dvh 30dvw 0dvh 0dvw;
+    font-size: 5dvh;
+}
 
-    div > a {
-        margin: 10dvh 0 0 0;
-    }
-
-
-
+main > section > h2 {
+    margin: 2dvh 0dvw 3dvh 10dvw;
+    font-size: 3dvh;
+}
 }
 
 

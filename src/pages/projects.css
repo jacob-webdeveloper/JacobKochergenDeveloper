@@ -27,3 +27,32 @@ section > a {
     color: black;
     
 }
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 5dvw;
+    }
+
+    section {
+        max-width: 40dvw;
+    }
+
+    section > img {
+        max-width: 40dvw;
+    }
+
+    main > h1 {
+        min-width: 100dvw;
+        justify-content: center;
+        display: flex;
+        font-size: 3em;
+        margin: 0 0 3dvw 0;
+    }
+
+    div > a {
+        font-weight: 400;
+    }
+}
